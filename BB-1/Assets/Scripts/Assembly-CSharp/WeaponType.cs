@@ -1,0 +1,11 @@
+public enum WeaponType
+{
+	MACHINEGUN,
+	SPREADSHOT,
+	BEARZOOKA,
+	KATANA,
+	LASER,
+	CHAINSAW,
+	ARROW,
+	SHOTGUN
+}

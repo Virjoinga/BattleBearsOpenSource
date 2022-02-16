@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+--- !u!1 &1286204774461407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4914704780677208}
+  - component: {fileID: 114926742607873460}
+  m_Layer: 0
+  m_Name: pathfinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4914704780677208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286204774461407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114926742607873460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 100100000}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286204774461407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fa7e94b79b6f74d956fbfe90521e10, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  grids:
+  - name: Room
+    showInEditor: 1
+    debug: 1
+    changed: 0
+    _height: 5
+    _width: 30
+    _depth: 30
+    scale: 1
+    offset: {x: -47, y: 0, z: -47}
+    globalOffset: {x: 0, y: 0, z: 0}
+    nodeSize: 4
+    globalWidth: 30
+    globalDepth: 30
+    globalHeight: 5
+    showPhysics: 0
+    ignoreLayer: 0
+    physicsMask:
+      serializedVersion: 2
+      m_Bits: 4608
+    physicsType: 2
+    raycastUpDown: 1
+    raycastLength: 1000
+    capsuleHeight: 5
+    physicsRadius: 0.5
+  textureGrid:
+    name: New Grid
+    showInEditor: 1
+    debug: 1
+    changed: 0
+    _height: 20
+    _width: 100
+    _depth: 100
+    scale: 1
+    offset: {x: 0, y: 0, z: 0}
+    globalOffset: {x: 0, y: 0, z: 0}
+    nodeSize: 10
+    globalWidth: 100
+    globalDepth: 100
+    globalHeight: 20
+    showPhysics: 0
+    ignoreLayer: 0
+    physicsMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    physicsType: 2
+    raycastUpDown: 1
+    raycastLength: 1000
+    capsuleHeight: 20
+    physicsRadius: 1
+  meshGrid:
+    name: New Grid
+    showInEditor: 1
+    debug: 1
+    changed: 0
+    _height: 20
+    _width: 100
+    _depth: 100
+    scale: 1
+    offset: {x: 0, y: 0, z: 0}
+    globalOffset: {x: 0, y: 0, z: 0}
+    nodeSize: 10
+    globalWidth: 100
+    globalDepth: 100
+    globalHeight: 20
+    showPhysics: 0
+    ignoreLayer: 0
+    physicsMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    physicsType: 2
+    raycastUpDown: 1
+    raycastLength: 1000
+    capsuleHeight: 20
+    physicsRadius: 1
+  links: []
+  gridGenerator: 0
+  levelCost: 40
+  calculateOnStartup: 1
+  cachePaths: 0
+  cacheLimit: 3
+  cacheTimeLimit: 2
+  showGrid: 1
+  showGridBounds: 1
+  showLinks: 1
+  areaColors: []
+  maxFrameTime: 0.1
+  maxPathsPerFrame: 1
+  simplify: 2
+  staticMaxAngle: 45
+  useNormal: 0
+  heapSize: 1
+  debugMode: 0
+  debugModeRoof: 300
+  showParent: 0
+  showUnwalkable: 0
+  onlyShowLastPath: 0
+  heightMode: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  dontCutCorners: 1
+  testStraightLine: 1
+  lineAccuracy: 1
+  formula: 1
+  isNeighbours: 1
+  heightRaycast: 0
+  useWorldPositions: 0
+  boundsMargin: 0
+  navTex: {fileID: 0}
+  threshold: 0.1
+  penaltyMultiplier: 20
+  boundsTag:
+  neighbourDistanceLimit: Infinity
+  boundMargin: 0.5
+  boundsRayHitMask:
+    serializedVersion: 2
+    m_Bits: 1
+  yLimit: 10
+  navmeshRotation: {x: 0, y: 0, z: 0}
+  navmesh: {fileID: 0}
+  meshNodePosition: 0
+  listRootNode: {fileID: 0}
