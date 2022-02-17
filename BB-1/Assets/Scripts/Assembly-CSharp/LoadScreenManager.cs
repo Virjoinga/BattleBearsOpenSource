@@ -18,20 +18,19 @@ public class LoadScreenManager : MonoBehaviour
 		{
 			if (GameManager.Instance.levelToLoad == "OliverCampaignLevel1")
 			{
-				//GameManager.Instance.PlayMovie("o_intro");
+				GameManager.Instance.PlayMovie("o_intro");
 			}
 			else if (GameManager.Instance.levelToLoad == "RiggsCampaignLevel1")
 			{
-				//GameManager.Instance.PlayMovie("r_intro");
+				GameManager.Instance.PlayMovie("r_intro");
 			}
 			else if (GameManager.Instance.levelToLoad == "WilCampaignLevel1")
 			{
-				//GameManager.Instance.PlayMovie("w_intro");
+				GameManager.Instance.PlayMovie("w_intro");
 			}
 		}
 		yield return new WaitForSeconds(1f);
 		GameManager.Instance.isIntro = false;
-		//Application.LoadLevel(GameManager.Instance.levelToLoad);
 		SceneManager.LoadScene(GameManager.Instance.levelToLoad);
 	}
 }

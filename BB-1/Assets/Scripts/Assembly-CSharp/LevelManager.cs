@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : ModeManager
 {
@@ -177,7 +178,8 @@ public class LevelManager : ModeManager
 		{
 			Application.OpenURL("http://www.battlebears.com/bbneg1piracy");
 			yield return new WaitForSeconds(1f);
-			Application.LoadLevel("MainMenu");
+			//Application.LoadLevel("MainMenu");
+			SceneManager.LoadScene("MainMenu");
 		}
 		if (nextRoomController == null)
 		{
@@ -207,7 +209,8 @@ public class LevelManager : ModeManager
 			theDir = oppositeDir;
 			oppositeDir = exitDirection;
 			roomController.enableColliders();
-			otherDoor.gameObject.SetActiveRecursively(true);
+			//otherDoor.gameObject.SetActiveRecursively(true);
+			otherDoor.gameObject.SetActive(true);
 			Transform doorNavTransform = roomController.GetDoorNavTransform(theDir);
 			if (doorNavTransform == null)
 			{
