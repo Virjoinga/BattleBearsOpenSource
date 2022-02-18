@@ -141,6 +141,7 @@ public class GUIButton : MonoBehaviour
 
 	public void OnButtonClicked()
 	{
+		Debug.Log("Pressed");
 		if (!disabled && !inActive)
 		{
 			SendMessageUpwards("OnGUIButtonClicked", this, SendMessageOptions.DontRequireReceiver);

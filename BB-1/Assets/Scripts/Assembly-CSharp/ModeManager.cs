@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public abstract class ModeManager : MonoBehaviour
 {
@@ -173,6 +174,7 @@ public abstract class ModeManager : MonoBehaviour
 		GameManager.Instance.currentStage++;
 		GameManager.Instance.isGoingUpElevator = true;
 		GameManager.Instance.inTutorialRoom = false;
-		Application.LoadLevel("OliverCampaignLevel" + GameManager.Instance.currentStage);
+		//Application.LoadLevel("OliverCampaignLevel" + GameManager.Instance.currentStage);
+		SceneManager.LoadScene("OliverCampaignLevel" + GameManager.Instance.currentStage);
 	}
 }

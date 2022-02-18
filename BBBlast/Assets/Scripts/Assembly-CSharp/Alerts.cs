@@ -81,7 +81,7 @@ public class Alerts : MonoBehaviour
 
 	private void Buy()
 	{
-		TapJoyManager.Instance.SpendJoules(1000);
+		//TapJoyManager.Instance.SpendJoules(1000);
 		PlayerPrefs.SetString("unlockedItems", PlayerPrefs.GetString("unlockedItems") + buyString);
 		CancelBuy();
 	}

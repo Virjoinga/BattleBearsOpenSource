@@ -89,6 +89,7 @@ public class Door : MonoBehaviour
 
 	public void openDoor(Transform playerTransform)
 	{
+		Debug.Log("openDoorExecuted");
 		if (!isOpen && !(ModeManager.Instance == null))
 		{
 			if (playOpenSound)
@@ -100,6 +101,7 @@ public class Door : MonoBehaviour
 				playOpenSound = true;
 			}
 			StartCoroutine(openDoorAnimation());
+			Debug.Log("If statement executed");
 			isOpen = true;
 			ModeManager.Instance.activateNextRoom(exitDirection);
 			StartCoroutine(startTimer(playerTransform));

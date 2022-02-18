@@ -47,18 +47,10 @@ public class MovieTex : MonoBehaviour
 
 	public void PlayMovie(string videoFile)
 	{
-		if (videoFile.Equals("r_loss_standard"))
-		{
-			VideoClip clip = Resources.Load<VideoClip>("Video/r_loss_standard");
-			videoPlayer.clip = clip;
-			videoPlayer.source = VideoSource.VideoClip;
-		}
-		else
-		{
-			videoPlayer.source = VideoSource.Url;
-			string url = Application.streamingAssetsPath + "/" + videoFile + ".mp4";
-			videoPlayer.url = url;
-		}
+		videoPlayer.source = VideoSource.Url;
+		string url = Application.streamingAssetsPath + "/" + videoFile + ".mp4";
+		videoPlayer.url = url;
+
 		videoPlayer.isLooping = false;
 		StartCoroutine(PlayVideo());
 	}
